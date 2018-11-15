@@ -18,5 +18,5 @@ def get_all_cats():
     return cats
 
 def get_cat(id):
-	cat=session.query(Cat).filter_by(id).first();
+	cat=session.query(Cat).filter_by(id=id).first();
 	return cat    
